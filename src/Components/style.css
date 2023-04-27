@@ -122,6 +122,14 @@ body {
     border-radius: 50vw;
 }
 
+.circle:hover {
+    background-color: var(--main-color);
+}
+
+.circle:hover i {
+    color: var(--white-color);
+}
+
 .circle i {
     color: var(--main-color);
     font-size: 1.2vw;
@@ -138,6 +146,13 @@ body {
     font-size: 1.2vw;
     font-weight: 600;
     border-radius: 0.5vw;
+    border: 0.2vw solid var(--white-color);
+}
+
+.resume-btn:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border: 0.2vw solid var(--main-color);
 }
 
 .my-name {
@@ -154,8 +169,7 @@ body {
 }
 
 .dynamic-txt {
-    /* background-color: red; */
-    margin-left: 15px;
+    margin-left: 1vw;
     font-size: 4vw;
     height: 4.7vw;
     overflow: hidden;

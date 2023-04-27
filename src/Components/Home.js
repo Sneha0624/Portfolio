@@ -6,7 +6,7 @@ import me from '../Images/sneha.png'
 function Home() {
     return (
         <div className='home-container'>
-            <Header />
+            {/* <Header /> */}
             <div className='content-container'>
                 <div className='text-container'>
                     {/* <div className='heading'>Hello, I am</div>
