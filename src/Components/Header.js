@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function header() {
     return (
         <div className='header-container'>
-            <div className='name'>Sneha Singhal</div>
+            <div className='name'>Portfolio.</div>
             <ul className='list-items'>
                 <li className='item'>
                     <NavLink to='/' className='link' activeClassName='active'>
@@ -30,9 +30,6 @@ function header() {
                     <NavLink to='/contact' className='link' activeClassName='active'>
                         Contact
                     </NavLink>
-                </li>
-                <li className='item'>
-                    <i class="fa-regular fa-moon"></i>
                 </li>
             </ul>
         </div>
