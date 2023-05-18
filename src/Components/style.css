@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #754ef9;
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+/******** header css *********/
+.header-container {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.name {
+    font-size: 3vw;
+    color: var(--main-color);
+    font-weight: 800;
+    padding-left: 8vw;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding-right: 3vw;
+}
+
+.item {
+    list-style: none;
+}
+
+.item i {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2vw;
+}
+
+.link:hover,
+.active {
+    text-decoration: underline;
+}
+
+/******** content css ********/
+.content-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 8vw;
+}
+
+.heading {
+    color: var(--text-color);
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 800;
+    font-size: 4.5vw;
+}
+
+.para {
+    width: 30vw;
+    color: #6c7a86;
+    font-size: 1.2vw;
+    margin-top: 1.2vw;
+    font-weight: 600;
+}
+
+.links {
+    margin-top: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+}
+
+.circle {
+    border: 0.2vw solid var(--main-color);
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50vw;
+}
+
+.circle:hover {
+    background-color: var(--main-color);
+}
+
+.circle:hover i {
+    color: var(--white-color);
+}
+
+.circle i {
+    color: var(--main-color);
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.resume-btn {
+    padding: 0.8vw 1vw;
+    margin-top: 2vw;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-size: 1.2vw;
+    font-weight: 600;
+    border-radius: 0.5vw;
+    border: 0.2vw solid var(--white-color);
+}
+
+.resume-btn:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border: 0.2vw solid var(--main-color);
+}
+
+.my-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.55vw;
+}
+
+.static-txt {
+    color: #333;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.dynamic-txt {
+    margin-left: 1vw;
+    font-size: 4vw;
+    height: 4.7vw;
+    overflow: hidden;
+    padding: 0;
+    font-weight: 800;
+}
+
+.dynamic-txt li {
+    color: var(--main-color);
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(2) infinite;
+}
+
+.dynamic-txt li span {
+    position: relative;
+}
+
+.dynamic-txt li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 2px solid var(--main-color);
+    animation: typing 3s steps(12) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% - 1px);
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        top: -140px;
+    }
+}
+
+.right-container {
+    width: 50%;
+    height: 100%;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%, 50% 50%);
+}
+
+.overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.img {
+    width: 42vw;
+    position: relative;
+    left: 10vw;
+    top: 7vw;
+    filter: drop-shadow(0 0 0.75rem rgb(247, 245, 245));
+    transform: rotateY(180deg);
+}
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: pink;
+}
