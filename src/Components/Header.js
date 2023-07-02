@@ -2,12 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function header() {
+    const pathName = window.location.pathname.includes('profile');
     return (
-        <div className='header-container'>
-            <div className='name'>Portfolio.</div>
+        <div className='header-container' style={{ backgroundColor: !pathName && 'blue' }}>
+            <div className='name' style={{ backgroundColor: pathName && 'white' }}>Portfolio.</div>
             <ul className='list-items'>
                 <li className='item'>
-                    <NavLink to='/' className='link' activeClassName='active'>
+                    <NavLink to='/profile' className='link' activeClassName='active'>
                         Home
                     </NavLink>
                 </li>

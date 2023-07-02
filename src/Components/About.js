@@ -1,10 +1,15 @@
 import React from 'react'
-import Header from './Header'
+// import profile from '../Images/sneha.png'
 
 function About() {
     return (
-        <div>
-            <Header />
+        <div className='about-container'>
+            <div className='about-left-container'>
+                {/* <img src={profile} alt='image' className='about-img' /> */}
+            </div>
+            <div className='about-right-container'>
+
+            </div>
         </div>
     )
 }

@@ -11,12 +11,12 @@ function index() {
         <>
             <Header />
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/profile' element={<Home />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/skill' element={''} />
                 <Route path='/resume' element={''} />
-                <Route path='*' element={<Navigate replace to='/' />} />
+                <Route path='*' element={<Navigate replace to='/profile' />} />
             </Routes>
         </>
     )
