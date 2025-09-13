@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function header() {
     const pathName = window.location.pathname.includes('profile');
+    console.log('pathName', pathName)
     return (
         <div className='header-container' style={{ backgroundColor: !pathName && 'blue' }}>
             <div className='name' style={{ backgroundColor: pathName && 'white' }}>Portfolio.</div>

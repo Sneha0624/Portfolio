@@ -15,15 +15,15 @@ function Home() {
                     </div>
                     <div className='para'>I am a MERN Stack Developer with strong cletch of abilities as React Js, Express Js, MySQL, Node Js.</div>
                     <div className='links'>
-                        <div className='circle'>
+                        <a target="_blank" href='https://www.linkedin.com/in/sneha-singhal-543964208/' className='circle'>
                             <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <div className='circle'>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/snehas_.6/" className='circle'>
                             <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div className='circle'>
+                        </a>
+                        <a target="_blank" href='https://github.com/Sneha0624' className='circle'>
                             <i class="fa-brands fa-github"></i>
-                        </div>
+                        </a>
                     </div>
                     <button className='resume-btn'>Download Resume</button>
                 </div>

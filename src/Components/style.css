@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --main-color: #754ef9;
+    --main-color: #6f5ab7;
     --bg-color: #fdfdfd;
     --text-color: #333;
     --white-color: #fdfdfd;
@@ -120,6 +120,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50vw;
+    text-decoration: none;
 }
 
 .circle:hover {
